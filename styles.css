@@ -1,0 +1,404 @@
+/* Style the navigation bar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:5%;
+    padding: 10px 20px;
+    background-color: #100f17;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure the navbar is on top */
+}
+
+.logo {
+    margin-right: auto; /* Pushes the logo to the left */
+    margin-left: 20px; /* Adjust the space between the logo and the edge of the navbar */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem; /* Adjust the space between buttons */
+    margin-right: 2rem; /* Adjust the space between buttons */
+    transition: color 0.3s, border-bottom-color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar a:hover {
+    color: white;
+    border-bottom: 2px solid white; /* Add underline effect */
+}
+
+
+body {
+    background-color: #100f17;
+}
+
+#home {
+    height: 100vh; /* Make it full-screen according to the viewport height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Make it a positioning context for absolute positioning of decorations */
+}
+
+/* Style the content inside the home section */
+#home .content {
+    position: absolute; /* Position content absolutely within the home section */
+    top: 50%; /* Align content vertically at the center */
+    left: 50%; /* Align content horizontally at the center */
+    transform: translate(-50%, -50%); /* Center content */
+    text-align: center; /* Center-align text */
+    z-index: 1; /* Ensure content is above decorations */
+}
+
+/* Style the dots */
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 0; /* Ensure dots are behind content */
+}
+
+/* Define colors for the dots */
+.dot.blue {
+    background-color: #1100ff;
+}
+
+.dot.orange {
+    background-color: #ffa500;
+}
+
+.dot.green {
+    background-color: #008000;
+}
+
+.headline {
+    text-align: left;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: -2rem; /* Adjust the position */
+    animation: slideUp 1s ease forwards;
+}
+
+.name {
+    color: rgb(21, 255, 118);
+}
+
+.description {
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    top: -4rem; /* Adjust the position */
+    left: -1rem; /* Adjust the position */
+    animation: slideUp 1s ease forwards;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.hire-button {
+    border: 2px solid rgb(21, 255, 118);
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
+    left: -15rem; /* Adjust the position */
+    top: -2rem; /* Adjust the position */
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hire-button:hover {
+    background-color: rgb(21, 255, 118);
+    color: white;
+}
+
+/* Add any existing CSS styles for the home section, content, headline, and description */
+
+#about {
+    height: 80vh; /* Make it full-screen according to the viewport height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Make it a positioning context for absolute positioning of decorations */
+}
+
+.headline-two h2 {
+    font-size: 5rem; /* Adjust the font size as needed */
+    color:white;
+    position: relative;
+    top:10rem;
+    left:15rem
+}
+
+.green-color {
+    color: rgb(21, 255, 118); /* Green color */
+}
+
+.description-two {
+    color: #ffffff;
+    font-size: 1.5rem;
+    position: relative;
+    top: 10rem; /* Adjust the position */
+    left: 15rem; /* Adjust the position */
+
+}
+
+@media screen and (max-width: 1500px) {
+
+    #box {
+        width: 200px;
+        height: 200px;
+        border: transparent;
+        position: relative;
+        overflow: hidden;
+        top:-45%;
+        left:30%
+    }
+    
+
+    .headline-two h2 {
+        font-size: 3rem; /* Adjust the font size as needed */
+        color:white;
+        position: relative;
+        top:10rem;
+        left:6rem
+    }
+
+    .description-two {
+        color: #ffffff;
+        font-size: 1.5rem;
+        position: relative;
+        top: 10rem; /* Adjust the position */
+        left: 6rem; /* Adjust the position */
+    
+    }
+
+}
+
+.description-two {
+    opacity: 0;
+    transform: translateY(10rem); /* Initially move the elements down by 30px */
+    transition: opacity 3.5s ease-out, transform 0.5s ease-out; /* Apply transition for opacity and transform */
+}
+
+.headline-two{
+    opacity: 0;
+    transform: translateY(8rem); /* Initially move the elements down by 30px */
+    transition: opacity 2s ease-out, transform 0.5s ease-out; /* Apply transition for opacity and transform */
+}
+
+.fade-up {
+    opacity: 1;
+    transform: translateY(0); /* Move the elements back to their original position */
+}
+
+
+.app-bukxo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#box {
+    width: 500px;
+    height: 500px;
+    border: transparent;
+    position: relative;
+    overflow: hidden;
+    top:-45%;
+    left:30%
+}
+
+.text {
+    position: absolute;
+    white-space: nowrap;
+}
+
+
+
+#services {
+    height: 100vh; /* Make it full-screen according to the viewport height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Make it a positioning context for absolute positioning of decorations */
+}
+
+#services img {
+    width:600px;
+    height:600px;
+    position:relative;
+    top:10%;
+    left:0%
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Three columns */
+    grid-gap: 0px; /* Add gap between grid items */
+    position:relative;
+    top:-85%;
+    width:30%;
+    left:60%;
+    height:0%
+  }
+
+  /* CSS styles for the grid boxes */
+  .grid-box {
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 8px;
+    font-family: "Roboto Flex", sans-serif;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.initial-animation {
+    animation: slideyup 0.5s ease forwards;
+}
+
+.grid-box:nth-child(1) {
+    animation: slideyup 0.5s ease forwards 0.2s;
+}
+
+.grid-box:nth-child(2) {
+    animation: slideyup 0.5s ease forwards 0.4s;
+}
+
+.grid-box:nth-child(3) {
+    animation: slideyup 0.5s ease forwards 0.6s;
+}
+
+@keyframes slideyup {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+  .grid-box h2 {
+       color:white
+  }
+
+  .grid-box p {
+    color:rgb(140, 137, 137)
+}
+
+#contact {
+    background-color: #1c1c26;
+    height: 100vh; /* Make it full-screen according to the viewport height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Make it a positioning context for absolute positioning of decorations */
+}
+
+.konteinar {
+    display: flex;
+    flex-direction: row; /* Display children in a row */
+    width: 100%; /* Occupy full width */
+    height: 100%;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.boks {
+    background-color: transparent;
+    
+    border-radius: 5px;
+    padding: 15px;
+    width: 95%;
+    margin-right: 15px; /* Add right margin to create gap between boks */
+}
+
+/* Remove margin-right for the last .boks element */
+.boks:last-child {
+    margin-right: 0;
+}
+
+
+.boks h2 {
+    color:white;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 5rem;
+}
+
+.baton {
+    border: 2px solid rgb(21, 255, 118);
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    left:3rem;
+    height:3rem;
+    width:8rem;
+}
+
+.baton:hover {
+    background-color: rgb(21, 255, 118);
+    color: white;
+}
+
+#aro-contact {
+    height: 100vh; /* Make it full-screen according to the viewport height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Make it a positioning context for absolute positioning of decorations */
+}
+
+.batonn {
+    border: 2px solid rgb(21, 255, 118);
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    left:9rem;
+    height:5rem;
+    width:12rem;
+    top:16rem;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out;
+}
+
+.batonn:hover {
+    background-color: rgb(21, 255, 118);
+    color: white;
+}
+
+.boks h3 {
+    color:white;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 5rem;
+    left:7rem;
+    top:4rem;
+    position: relative;
+
+}
+
